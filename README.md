@@ -44,18 +44,19 @@ will be deleted. Default is 2
     BRUTE_FORCE_PURGE_MULTIPLIER = 2   
 </pre>
 
-Download and install this module.
-
-
 *Usage*
 
 You should check for brute force attacks prior the validation of the login form.
 
 Use brute_force_check(request.META['REMOTE_ADDR']) to check if the given IP
 has a entry in the security database. 
+
 It will return *False* if the IP is blocked at the current time.
+
 It will return an Object if the IP has an entry but is not blocked currently
+
 It will return None if there is no entry for it yet
+
 
 Use brute_force_add(request.META['REMOTE_ADDR'], [brute_force_object]) to
 add or update a entry in the brute_force table. (Use the entry from brute_force_check
