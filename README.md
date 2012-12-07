@@ -5,10 +5,9 @@ Provides simple IP based brute force security for django user login
 
 *Basic Functinality*
 
-Prior to every login this module checks if the remote IP has tried to login
-to often during a given time period.
-
-If the IP has to many login attempts it blocks it for a given time.
+This module provides basic functions to check if an IP trys to bruteforce
+on or many accounts at your django page.
+It also provides posibilities to lock an IP.
 
 *Installation*
 
